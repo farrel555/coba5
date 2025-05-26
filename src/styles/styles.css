@@ -283,3 +283,30 @@ header {
   background: #c0392b;
 }
 
+/* styles.css */
+
+#btnSubscribe {
+  padding: 0.4em 1em;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff; /* biru */
+  color: white;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
+  border: 2px solid red;
+}
+
+#btnSubscribe.subscribed {
+  background-color: #28a745; /* hijau */
+}
+
+@media screen and (max-width: 768px) {
+  #btnSubscribe {
+    display: inline-block;
+  }
+}
